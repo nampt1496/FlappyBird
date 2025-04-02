@@ -10,7 +10,7 @@ Flappy Bird was created using SDL2 and C++.
 
 Handles collisions between characters and pipes, the ground, and borders on windows.
 
-Handles the player's key/mouse actions.
+Handles the player's mouse actions.
 
 The ground, moving characters make the game more realistic.
 
@@ -24,4 +24,4 @@ Play next icon.
 
 3. How to play
 
-Click mouse or press SPACE/UP key to play.
+Click mouse to play.
