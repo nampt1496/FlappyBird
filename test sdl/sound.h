@@ -22,12 +22,8 @@ public:
 
     void renderSound();
 
-    bool checkSound();
-
 private:
     LTexture lTexture;
-    const short int POS_X = 107;
-    const short int POS_Y = 267;
     bool isPlay = 0;
     Mix_Chunk* breath = NULL;
     Mix_Chunk* hit = NULL;
