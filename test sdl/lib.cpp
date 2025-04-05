@@ -47,7 +47,7 @@ void LTexture::Render(short int x, short int y, short int angle, SDL_Rect* clip,
     SDL_RenderCopyEx( gRenderer, Texture, clip, &Rec_Render, angle, NULL, flip );
 }
 
-bool LTexture::Load(string path, double scale)
+bool LTexture::Load(string path, double rate)
 {
 	free();
 
@@ -66,8 +66,8 @@ bool LTexture::Load(string path, double scale)
 		}
 		else
 		{
-			tWidth = (loadedSurface->w) * scale;
-			tHeight = (loadedSurface->h) * scale;
+			tWidth = (loadedSurface->w) * rate;
+			tHeight = (loadedSurface->h) * rate;
 		}
 
 		SDL_FreeSurface( loadedSurface );
