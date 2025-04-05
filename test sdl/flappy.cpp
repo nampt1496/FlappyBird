@@ -46,7 +46,7 @@ void flappy::fall()
             x0 = posFlappy.y;
             angle = -25;
         }
-        else if (angle < 70 && time > 30)
+        else if (angle < 70)
         {
             angle += 4;
         }
