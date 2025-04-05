@@ -91,19 +91,6 @@ void sound::resumeMusic()
 void sound::renderSound()
 {
 
-    lTexture.Render(POS_X, POS_Y, 0, &Active);
+    lTexture.Render(0, 0, 0, &Active);
 
-}
-
-bool sound::checkSound()
-{
-    int x, y;
-    SDL_GetMouseState(&x, &y);
-    if (x > POS_X && x < POS_X + lTexture.getWidth() &&
-        y > POS_Y && y < POS_Y + lTexture.getHeight())
-    {
-
-        return true;
-    }
-    return false;
 }
