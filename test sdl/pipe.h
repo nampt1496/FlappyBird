@@ -12,8 +12,8 @@ class pipe
 {
 private:
     LTexture lTexture;
-    const short int randMin = -373 + 30;
-    const short int randMax = lTexture.SCREEN_HEIGHT - lTexture.LAND_HEIGHT - 373 - lTexture.PIPE_DISTANCE - 30;
+    const short int randMin = -343;
+    const short int randMax = lTexture.SCREEN_HEIGHT - lTexture.LAND_HEIGHT - lTexture.PIPE_DISTANCE - 403;
 public:
     bool init();
 
