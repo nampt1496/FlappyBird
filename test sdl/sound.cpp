@@ -23,14 +23,14 @@ bool sound::init()
             success = false;
         }
         breath = Mix_LoadWAV( breath_path.c_str() );
-        Mix_VolumeChunk(breath, 50);
+        Mix_VolumeChunk(breath, 30);
         if (breath == NULL)
         {
             printf( "Failed to load chord! SDL_mixer Error: %s\n", Mix_GetError() );
             success = false;
         }
         hit = Mix_LoadWAV( hit_path.c_str() );
-        Mix_VolumeChunk(hit, 60);
+        Mix_VolumeChunk(hit, 40);
         if (hit == NULL)
         {
             printf( "Failed to load chord! SDL_mixer Error: %s\n", Mix_GetError() );
@@ -38,7 +38,7 @@ bool sound::init()
         }
 
         Mix_Music* music = Mix_LoadMUS("sound/nhacgame.mp3");
-        Mix_VolumeMusic(60);
+        Mix_VolumeMusic(30);
         if (!music) {
             printf( "Failed to load chord! SDL_mixer Error: %s\n", Mix_GetError() );
             success = false;
