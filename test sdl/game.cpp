@@ -326,6 +326,7 @@ bool game::checkReplay()
 	SDL_GetMouseState(&x, &y);
 	if (x > (lTexture.SCREEN_WIDTH - 100)/2 && x < (lTexture.SCREEN_WIDTH + 100) / 2 && y > 370 && y < 370 + 60)
 	{
+		SDL_Delay(300);
 		return true;
 	}
 	return false;
