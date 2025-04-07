@@ -1,6 +1,5 @@
 #include "game.h"
 #include "lib.h"
-#include <time.h>
 #include <stdlib.h>
 #include <SDL.h>
 #include <SDL_image.h>
