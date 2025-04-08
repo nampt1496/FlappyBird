@@ -79,11 +79,6 @@ void flappy::update(int pipeWidth,int pipeHeight)
             posFlappy.y = x0 + time * time * 0.18 - time * 7.3;
             time++;
         }
-        /*if(posFlappy.y > lTexture.SCREEN_HEIGHT - lTexture.LAND_HEIGHT -  lTexture.BIRD_HEIGHT +5)
-        {
-            posFlappy.y = lTexture.SCREEN_HEIGHT - lTexture.LAND_HEIGHT -  lTexture.BIRD_HEIGHT +2;
-            time=0;
-        }*/
         if ( (posFlappy.x + lTexture.getWidth() > posPipe[ahead].x + 5) && (posFlappy.x + 5 < posPipe[ahead].x + pipeWidth) &&(posFlappy.y + 5 < posPipe[ahead].y + pipeHeight || posFlappy.y  + lTexture.getHeight() > posPipe[ahead].y + pipeHeight + lTexture.PIPE_SPACE + 5) )
         {
             lTexture.die = true;
