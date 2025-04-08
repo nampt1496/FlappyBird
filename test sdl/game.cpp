@@ -287,13 +287,13 @@ void game::renderStart()
 void game::renderBackground()
 {
 	LTexture image;
-	if(lTexture.score%40<20){
-    image.Load("image/background.png", 1);
+	if(lTexture.score%36<24){
+        image.Load("image/background.png", 1);
 	image.Render(0, 0);
 	}
-	else if(lTexture.score%40<40) {
-    image.Load("image/background2.png",1);
-    image.Render(0, 0);
+	else {
+        image.Load("image/background2.png",1);
+        image.Render(0, 0);
 	}
 	image.free();
 }
