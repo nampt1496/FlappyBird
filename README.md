@@ -14,8 +14,6 @@ Handles the player's mouse actions.
 
 The ground, moving characters make the game more realistic.
 
-Limit FPS to be compatible with all devices 
-
 2.2. TabGameOver
 
 View current score, highest score.
