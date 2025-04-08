@@ -317,6 +317,21 @@ void game::renderGameOver()
 	LTexture image;
 	image.Load("image/gameOver.png", 1);
 	image.Render((lTexture.SCREEN_WIDTH - image.getWidth()) / 2+15, 250);
+	if(lTexture.score<6)
+    {
+	image.Load("image/bad.png", 0.8);
+	image.Render((lTexture.SCREEN_WIDTH - image.getWidth()) / 2, 100);
+	}
+	else if(lTexture.score<15)
+    {
+    image.Load("image/good.png", 0.7);
+	image.Render((lTexture.SCREEN_WIDTH - image.getWidth()) / 2, 100);
+    }
+    else
+    {
+    image.Load("image/great.png", 0.8);
+	image.Render((lTexture.SCREEN_WIDTH - image.getWidth()) / 2, 100);
+    }
 	image.free();
 }
 void game::replay()
