@@ -300,7 +300,7 @@ void game::renderLand()
 	image.Render(0, 0);
 	}
 	else {
-    image.Load("image/background2.png",1); //Nếu điểm số thay đổi trong khoảng 20 điểm thì sẽ đổi nền
+    image.Load("image/background2.png",1); //Nếu điểm số thay đổi mỗi 20 điểm thì sẽ đổi nền
     image.Render(0, 0);
 	}
 	image.free();
