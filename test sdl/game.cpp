@@ -66,7 +66,7 @@ bool game::initGraphic()
 		}
 		else
 		{
-			lTexture.gRenderer = SDL_CreateRenderer( lTexture.gWindow, -1, SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC );
+			lTexture.gRenderer = SDL_CreateRenderer( lTexture.gWindow, -1, SDL_RENDERER_PRESENTVSYNC );
 			if( lTexture.gRenderer == NULL )
 			{
 				printf( "Renderer could not be created! SDL Error:%s\n ", SDL_GetError());
@@ -141,7 +141,7 @@ void game::renderScoreSmall()
 		{
 			image.Load("image/0.png", rate);
 		}
-		image.Render(180 -(l-i-1)*20, 50);
+		image.Render(250 -(l-i-1)*18, 50);
 	}
 	image.free();
 }
@@ -198,7 +198,7 @@ void game::renderScore()
 		{
 			image.Load("image/0.png", rate);
 		}
-		image.Render(180 -(l-i-1)*20, 470);
+		image.Render(265 -(l-i-1)*18, 470);
 	}
 	image.free();
 
@@ -265,7 +265,7 @@ void game::renderBestScore()
 		{
 			image.Load("image/0.png", rate);
 		}
-		image.Render(180 -(l-i-1)*20, 515);
+		image.Render(265 -(l-i-1)*18, 515);
 	}
 	image.free();
 
@@ -326,7 +326,7 @@ bool game::checkReplay()
 	SDL_GetMouseState(&x, &y);
 	if (x > (lTexture.SCREEN_WIDTH - 100)/2 && x < (lTexture.SCREEN_WIDTH + 100) / 2 && y > 370 && y < 370 + 60)
 	{
-	    SDL_Delay(300);
+	    SDL_Delay(800);
 		return true;
 	}
 	return false;
