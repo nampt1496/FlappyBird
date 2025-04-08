@@ -62,6 +62,8 @@ void sound::Free()
     lTexture.free();
     Mix_FreeChunk(hit);
     hit = NULL;
+    Mix_FreeChunk(breath);
+    breath=NULL;
     Mix_FreeMusic(music);
     music= NULL;
     Mix_Quit();
