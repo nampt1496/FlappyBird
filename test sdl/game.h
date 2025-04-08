@@ -18,6 +18,7 @@ public:
         enum type { QUIT, PLAY, NONE};
         type Type;
     };
+    LTexture lTexture;
     input userInput;
     flappy bird;
     pipe pipe;
@@ -79,7 +80,6 @@ public:
     void Restart();
 
 private:
-    LTexture lTexture;
     const double rate = 0.75;
     int Score;
     int bestScore;
