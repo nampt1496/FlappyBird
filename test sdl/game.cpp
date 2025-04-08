@@ -11,7 +11,7 @@ void game::takeInput()
             userInput.Type = input::QUIT;
             lTexture.quit = true;
         }
-        else if (lTexture.event.type == SDL_MOUSEBUTTONDOWN)
+        else if (lTexture.event.type == SDL_MOUSEBUTTONDOWN||lTexture.event.type==SDL_KEYDOWN&&lTexture.event.key.keysym.sym == SDLK_SPACE)
         {
             userInput.Type = input::PLAY;
         }
