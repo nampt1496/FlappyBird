@@ -66,7 +66,7 @@ bool game::initGraphic()
 		}
 		else
 		{
-			lTexture.gRenderer = SDL_CreateRenderer( lTexture.gWindow, -1, SDL_RENDERER_PRESENTVSYNC );
+			lTexture.gRenderer = SDL_CreateRenderer( lTexture.gWindow, -1,SDL_RENDERER_PRESENTVSYNC );
 			if( lTexture.gRenderer == NULL )
 			{
 				printf( "Renderer could not be created! SDL Error:%s\n ", SDL_GetError());
@@ -287,22 +287,22 @@ void game::renderStart()
 void game::renderBackground()
 {
 	LTexture image;
-	image.Load("image/background.png", 1);
+	if(lTexture.score%40<20){
+    image.Load("image/background.png", 1);
 	image.Render(0, 0);
+	}
+	else if(lTexture.score%40<40) {
+    image.Load("image/background2.png",1);
+    image.Render(0, 0);
+	}
 	image.free();
 }
 
 void game::renderLand()
 {
 	LTexture image;
-	if(lTexture.score%40<20||lTexture.die==true){
-    image.Load("image/background.png", 1);
-	image.Render(0, 0);
-	}
-	else {
-    image.Load("image/background2.png",1); //Nếu điểm số thay đổi mỗi 20 điểm thì sẽ đổi nền
-    image.Render(0, 0);
-	}
+	image.Load("image/land.png", 1);
+	image.Render((lTexture.SCREEN_WIDTH - image.getWidth()) / 2, lTexture.SCREEN_HEIGHT- image.getHeight());
 	image.free();
 }
 void game::character()
