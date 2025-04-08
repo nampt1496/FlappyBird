@@ -27,6 +27,7 @@ int main(int argc, char** argv)
                     {
                         g.sound.resumeMusic();
                         isMenu = 0;
+                        g.lTexture.score=0;
                     }
                     g.userInput.Type = game::input::NONE;
                 }
