@@ -22,4 +22,4 @@ Play next icon.
 
 3. How to play
 
-Click mouse to play.
+Click mouse or press SPACE to play.
