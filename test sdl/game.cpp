@@ -198,7 +198,7 @@ void game::renderScore()
 		{
 			image.Load("image/0.png", rate);
 		}
-		image.Render(265 -(l-i-1)*18, 470);
+		image.Render(275 -(l-i-1)*18, 470);
 	}
 	image.free();
 
@@ -265,7 +265,7 @@ void game::renderBestScore()
 		{
 			image.Load("image/0.png", rate);
 		}
-		image.Render(265 -(l-i-1)*18, 515);
+		image.Render(275 -(l-i-1)*18, 515);
 	}
 	image.free();
 
