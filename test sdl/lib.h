@@ -44,7 +44,7 @@ public:
     static bool die;
     static int score;
 
-    static const int SCREEN_WIDTH = 350;
+    static const int SCREEN_WIDTH = 525;
     static const int SCREEN_HEIGHT = 625;
     static const int BIRD_WIDTH = 50;
     static const int BIRD_HEIGHT = 35;
