@@ -23,3 +23,7 @@ Play next icon.
 3. How to play
 
 Click mouse or press SPACE to play.
+![image](https://github.com/user-attachments/assets/8464f80e-b32e-42bc-85d9-7d85a49e33ba)
+![image](https://github.com/user-attachments/assets/fd642752-839c-422b-b7d6-184d1be7047e)
+![image](https://github.com/user-attachments/assets/c202d5d6-9e7b-492c-a6be-ddff24f9b2b9)
+
